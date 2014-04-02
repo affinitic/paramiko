@@ -46,6 +46,7 @@ if PY2:
     def u(s, encoding='utf8'):  # NOQA
         """cast bytes or unicode to unicode"""
         if isinstance(s, str):
+            return s
             return s.decode(encoding)
         elif isinstance(s, unicode):
             return s
